@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'barlow', monospace;
+
+}
+
+.header{
+    background-color: #F2B441;
+    color: black;
+    border-bottom: 3px solid #000000;
+
+
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+.header .container{
+    display: flex;
+    justify-content:space-between
+    
+}
+.navbar{
+   
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    align-items: center;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.divEsquerda{
+     background-image: url('cacau-793125286.jpg');
+     background-size: cover;
+     height: 100vh;
+     width: 40%;
+     float: left;
+}
+.divDireita{
+    background: linear-gradient(45deg, #472505, #000407,orange);
+    height: 100vh;
+    width: 100vw;
+
+}
+.divDireita .card {
+    height: 450px;
+    width: 300px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 350px;
+    top: 150px;
+    background: linear-gradient(45deg,#472505, #ffe2ad,orange);
+
+    border: 3px solid #000000;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 24px;
+    width: 250px;
+}
+
+.card h2 {
+    margin: 0;
+}
+form label {
+    margin-top: 8px;
+}
+
+form input {
+    margin-top: 8px;
+    outline: #000000 3px solid;
+    border-radius: 10px;
+    border: 0;
+    padding: 8px;
+}
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left,  #472505, #000407,orange);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #472505, #000407,orange);
+}
